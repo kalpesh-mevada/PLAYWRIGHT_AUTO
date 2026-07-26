@@ -8,5 +8,5 @@ test( 'Login test', async ({page}) =>{
     await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
     await expect(page.locator('.title')).toHaveText('Products');
     await expect(page.locator('.inventory_item')).toHaveCount(6);
-    await page.pause();
+    //await page.pause();
 })
